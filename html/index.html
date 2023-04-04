@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewpor" content="width=device-width, initial-scale=1.0">
+  <title>FOODs</title>
+  <link rel="icon" href="logo.jpg">
+  <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+ 	
+  <!-- Navigation -->
+  
+  <nav id="navbar">
+   <a href="#" class="Food">FOODs</a>
+    <ul>
+    	<li><a href="#home">Home</a></li>
+    	<li><a href="#about">About</a></li>
+    	<li><a href="#food">Food</a></li>
+    	<li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <!-- Home -->
+
+  <div class="main-home">
+   <h1 id="home">FOODs</h1>
+   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+  </div>
+
+  <!-- About -->
+
+  <div class="main-about">
+   <h1 id="about">About</h1>
+   <img src="food.jpg" width="25%" height="25%">
+   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+  </div>
+
+  <!-- Food -->
+
+  <div class="main-food">
+   <h1 id="food">Food</h1>
+   <img src="food1.jpg" width="20%" height="20%">
+   <img src="food2.jpg" width="20%" height="20%">
+   <img src="food3.jpg" width="20%" height="20%">
+   <br>
+   <img src="food1.jpg" width="20%" height="20%">
+   <img src="food1.jpg" width="20%" height="20%">
+   <img src="food1.jpg" width="20%" height="20%">
+  </div>
+
+  <!-- Contact -->
+
+  <div class="main-contact">
+   <h1 id="contact">Contact</h1>
+   <form action="#" class="form">
+     <label>Username:</label>
+   	 <input type="text" name="username" placeholder="Enter your Username" required/>
+  </div>
+  <div class="contact1">
+     <label>Password:</label>
+     <input type="password" name="password" placeholder="Enter your Password" required/>
+  </div>
+  <div class="button1">
+     <button type="submit">Login</button>
+  </div>
+
+  <!-- Footer -->
+
+  <div class="footer">
+   <h2>FOODs Opacity / CopyRight 2022/2023</h2>
+    <p>Using HTML5,CSS3,JAVASCRIPT</p>
+  </div>
+
+  <!-- JavaScript -->
+
+  <script type="text/javascript">
+  	var lastScrollTop = 0;
+  	    navbar = document.getElementById("navbar");
+  	window.addEventListener("scroll", function(){
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop){
+        	navbar.style.top="-60px";
+        }
+        else{
+        	navbar.style.top="0";
+        }
+        lastScrollTop = scrollTop;
+  	})
+  </script>
+
+ </body>
+</html>
